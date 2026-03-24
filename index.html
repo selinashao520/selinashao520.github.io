@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selina Shao | Founder & ESG Investor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a1628;
+            --accent: #5ba0d9;
+            --accent-light: #7eb8e8;
+            --text: #e8edf3;
+            --text-muted: #8aa4c0;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 50%, #0d2137 100%);
+            min-height: 100vh;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+        }
+        
+        .avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent) 0%, #2d6a9f 100%);
+            margin: 0 auto 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            color: #fff;
+            box-shadow: 0 15px 50px rgba(91, 160, 217, 0.4);
+        }
+        
+        .name-en {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, var(--accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .name-cn {
+            font-size: 22px;
+            color: var(--accent);
+            letter-spacing: 6px;
+            margin-bottom: 25px;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 550px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 13px;
+            color: var(--accent);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .roles-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .role-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(91, 160, 217, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .role-card:hover {
+            background: rgba(91, 160, 217, 0.08);
+            transform: translateY(-3px);
+        }
+        
+        .role-icon { font-size: 32px; margin-bottom: 15px; }
+        
+        .role-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        
+        .role-org {
+            font-size: 12px;
+            color: var(--accent);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        
+        .role-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        .focus-areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        
+        .focus-tag {
+            background: rgba(91, 160, 217, 0.12);
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 14px;
+            border: 1px solid rgba(91, 160, 217, 0.2);
+        }
+        
+        .contact-section {
+            background: rgba(91, 160, 217, 0.08);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .contact-icon { font-size: 24px; }
+        
+        .contact-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .contact-value {
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer {
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        .brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        
+        .slogan {
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            .name-en { font-size: 36px; }
+            .roles-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="avatar">S</div>
+            <h1 class="name-en">Selina Shao</h1>
+            <div class="name-cn">邵 彩 霞</div>
+            <p class="tagline">Bridging Green Energy & Tech Innovation • Empowering Women in STEM</p>
+        </header>
+        
+        <section class="section">
+            <h2 class="section-title">Current Roles</h2>
+            <div class="roles-grid">
+                <div class="role-card">
+                    <div class="role-icon">🏦</div>
+                    <div class="role-title">ESG Investment Practitioner</div>
+                    <div class="role-org">New Development Bank</div>
+                    <div class="role-desc">Deep expertise in sustainable finance and green investment strategies</div>
+                </div>
+                
+                <div class="role-card">
+                    <div class="role-icon">⚡</div>
+                    <div class="role-title">Founder</div>
+                    <div class="role-org">Kunteng Energy Tech</div>
+                    <div class="role-desc">Pioneering green energy solutions and climate tech innovations</div>
+                </div>
+                
+                <div class="role-card">
+                    <div class="role-icon">💼</div>
+                    <div class="role-title">Female General Partner</div>
+                    <div class="role-org">Kunteng Capital</div>
+                    <div class="role-desc">Championing women entrepreneurs in technology and innovation</div>
+                </div>
+                
+                <div class="role-card">
+                    <div class="role-icon">🎙️</div>
+                    <div class="role-title">Curator</div>
+                    <div class="role-org">W-Create Salon</div>
+                    <div class="role-desc">Building ecosystem for AI energy and women in STEM</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Focus Areas</h2>
+            <div class="focus-areas">
+                <span class="focus-tag">🤖 AI & Technology</span>
+                <span class="focus-tag">🌱 Green Energy</span>
+                <span class="focus-tag">🌍 Climate Tech</span>
+                <span class="focus-tag">⚛️ Quantum Tech</span>
+                <span class="focus-tag">🦾 Embodied AI</span>
+                <span class="focus-tag">👩‍💼 Women in STEM</span>
+                <span class="focus-tag">📊 ESG Investment</span>
+                <span class="focus-tag">⚡ Energy Transition</span>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-section">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+8615202136096" class="contact-value">+86 152 0213 6096</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:selinashao@kuntengenergy.com" class="contact-value">selinashao@kuntengenergy.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="brand">Kunteng Energy</div>
+            <div class="slogan">Innovation for a Sustainable Future</div>
+        </footer>
+    </div>
+</body>
+</html>
